@@ -1,0 +1,597 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {background-color: #151515;
+padding: 0;
+margin: 0;}
+
+div {}
+
+/* ---------------------- styles start here ---------------------- */
+
+/* ---->> navigation <<----- */
+
+div.nav-container {display: flex;
+height: 55px;
+background-color: #242527;
+border-bottom: 1px solid #6c6d6f;}
+
+    div.nav-container > * {
+       display: flex;
+    }
+
+    /* ---->> logo and search-box <<----- */
+
+    div.nav-container .logo-search-container {
+        overflow: hidden;
+        box-sizing: border-box;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 18%;
+        padding-top: 7px;
+        padding-left: 15px;
+    }
+
+        div.nav-container .logo-search-container .navbar-logo svg {
+            width: 40px;
+        }
+
+        div.nav-container .logo-search-container .searchbox-container {
+            display: flex;
+            background-color: #3A3B3D;
+            padding-left: 17px;
+            padding-right: 12px;
+            border-radius: 25px;
+            height: 41px;
+            width: 225px;
+            margin-left: 10px;
+            flex-wrap: nowrap;
+        }
+
+            div.nav-container .logo-search-container .searchbox-container img {
+                width: 15px;
+                height: 15px;
+                margin-top: 13px;
+            }
+
+            div.nav-container .logo-search-container .searchbox-container .search-box {
+                background: none;
+                border: 0px;
+                color: white;
+                font-size: 15px;
+                float:right;
+                width: 90%;
+                margin-left: 5px;
+                margin-top: -2px;
+            }
+
+            div.nav-container .logo-search-container .searchbox-container .search-box:focus {
+                outline: none;
+            }
+        
+    /* ---->> middle bar buttons <<----- */
+
+    div.nav-container .top-middle-bar {
+        box-sizing: border-box;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 64%;
+        padding-top:15px;
+    }
+
+        div.nav-container .top-middle-bar .middle-bar-buttons-container {
+        margin: auto;
+        display: flex;
+        margin-top: -11px;
+        width: 60%;
+        flex-wrap: nowrap;
+        }
+
+            div.nav-container .top-middle-bar .middle-bar-buttons-container a {
+                display: inline-flex;
+                height: 46.5px;
+                width: 20%;
+                margin-left: 1px;
+                margin-right: 1px;
+                border-radius: 8px;
+            }
+
+            div.nav-container .top-middle-bar .middle-bar-buttons-container a:hover {
+                background-color: #3A3B3D;
+            }
+
+                div.nav-container .top-middle-bar .middle-bar-buttons-container a svg {
+                   margin: auto;
+                   width: 28px;
+                   color: #B0B3B8;
+                }
+
+    div.nav-container .top-right-bar {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 18%;
+    }
+
+        div.nav-container .top-right-bar .top-right-bar-buttons-container {
+            margin-top: 6.5px;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: auto;
+            margin-right: 5%;
+        }
+
+            div.nav-container .top-right-bar .top-right-bar-buttons-container .button-container {
+                background-color: rgb(58, 59, 60);
+                display: inline-flex;
+                width: 30px;
+                height: 30px;
+                padding: 6px;
+                border-radius: 25px;
+                overflow: hidden;
+                margin-left: 6px;
+            }
+
+                div.nav-container .top-right-bar .top-right-bar-buttons-container .button-container #account img{
+                    margin-left: -6px;
+                    margin-top: -6px;
+                    width: 42px;
+                }
+
+            div.nav-container .top-right-bar .top-right-bar-buttons-container svg {
+                width: 20px;
+                display: block;
+                flex-wrap: nowrap;
+                margin-left: 5px;
+                margin-top: 5px;
+                color: white;
+            }
+
+/* ---->> main <<----- */
+
+div.main-container {
+display: flex;
+background-color: #18191B;
+}
+
+    div.main-container > * {
+        display: flex;
+    }
+
+    /* ---->> sidebar-left <<----- */
+
+    div.main-container .sidebar-left {
+        height: 93vh;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 18%;
+    }
+
+        div.main-container .sidebar-left > * {
+        }
+
+        div.main-container .sidebar-left .shortcuts-one {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 380px;
+            padding:0px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            padding-top: 15px;
+            margin-left: 10px;
+            border-bottom: 1px solid #5d5f61;
+        }
+        
+        div.main-container .sidebar-left .shortcuts-one img {
+            border-radius: 20px;
+        }
+
+            div.main-container .sidebar-left .shortcuts-one .shortcuts-one-button-container {
+                border-radius: 10px;
+                height: 39px;
+                padding: 7px;
+                margin-left: 0px;
+                display: flex;
+            }  
+
+                div.main-container .sidebar-left .shortcuts-one .shortcuts-one-button-container:hover {
+                    background-color: #303031;
+                    cursor: pointer;
+                }
+
+                div.main-container .sidebar-left .shortcuts-one .shortcuts-one-button-container a {
+                    margin-top: 8px;
+                    margin-left: 11px;
+                    text-decoration: none;
+                    color: white;
+                    font-size: 0.925em;
+                }
+
+                    div.main-container .sidebar-left .shortcuts-one #see-more svg {
+                        background-color: #2c2d2e;
+                        color: white;
+                        width: 22px;
+                        padding: 9px;
+                        border-radius: 20px;
+                    }
+
+                    div.main-container .sidebar-left .shortcuts-one #profile img {
+                        width: 36px;
+                        height: 36px;
+                        margin-top: 2px;
+                    }
+
+        div.main-container .sidebar-left .shortcuts-two {
+            display: flex;
+            width: 100;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 450px;
+        }
+
+            div.main-container .sidebar-left .shortcuts-two .flex-container {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+            }
+            
+                div.main-container .sidebar-left .shortcuts-two .flex-container .shortcuts-two-button-container {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    padding:10px;
+                    border-radius: 10px;
+                    width: 130%;
+                }
+
+                div.main-container .sidebar-left .shortcuts-two .flex-container .shortcuts-two-button-container:hover {
+                    background-color: #303031;
+                    cursor: pointer;
+                }
+
+                    div.main-container .sidebar-left .shortcuts-two .flex-container .shortcuts-two-button-container img {
+                        width: 38px;
+                        border-radius: 8px;
+                        margin-right: 10px;
+                    }
+
+                    div.main-container .sidebar-left .shortcuts-two .flex-container .shortcuts-two-button-container a {
+                        text-decoration: none;
+                        margin-top: 8px;
+                        font-size: 0.925em;
+                        color: white;
+                    }
+
+            div.main-container .sidebar-left h2 {
+                color: rgb(163, 163, 170);
+                font-size: 1.02em;
+                font-weight:600;
+                margin-left: 20px;
+            }
+
+    /* ---->> feed (stories, create-post section, posts) <<----- */
+
+    div.main-container .feed {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        flex-grow: 5;
+        flex-direction: column;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 64%;
+    }
+
+        div.main-container .feed .stories-reels {
+            flex-shrink: 0;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            background-color: #242526;
+            overflow: hidden;
+            border-radius: 7px;
+            margin-top: 25px;
+            height: 350px;
+            margin-bottom: 0;
+        }
+
+            div.main-container .feed .stories-reels .stories-reels-buttons-container {
+                height: 60px;
+                width: 100%;
+                margin-top: 0px;
+                padding-top: 5px;
+                border-bottom: 1px solid #414144;
+            }
+
+                div.main-container .feed .stories-reels .stories-reels-buttons-container .flex-container {
+                    display: flex;
+                    margin: auto;
+                    width: 95%;
+                }
+
+            div.main-container .feed .stories-reels .stories-reels-buttons-container div {
+                display: inline-flex;
+            }
+
+            div.main-container .feed .stories-reels .stories-reels-buttons-container a {
+                margin-top: 15px;
+                margin-left: 8px;
+                text-decoration: none;
+                color: #b0b3b8;
+            }
+
+            div.main-container .feed .stories-reels .stories-reels-buttons-container .flex-container div {
+                margin: auto;
+                width: 50%;
+                height: 55px;
+                border-radius: 10px;
+            }
+
+                div.main-container .feed .stories-reels .stories-reels-buttons-container .flex-container div:hover {
+                    background-color: #3a3b3c;
+                    cursor: pointer;
+                }
+
+            div.main-container .feed .stories-reels .stories-reels-buttons-container .flex-container div div {
+                margin: auto;
+                width: auto;
+            }
+
+                div.main-container .feed .stories-reels div svg {
+                    width: 27px;
+                    color: #b0b3b8;
+                }   
+            
+            div.main-container .feed .stories-reels .stories-container {
+                width: 100%;
+                padding: 15px;
+                display: flex;
+            }
+
+                div.main-container .feed .stories-reels .stories-container .story-card:hover {
+                    cursor: pointer;
+                }
+
+                div.main-container .feed .stories-reels .stories-container .story-card .create-story-bot-div {
+                    height: 35px;
+                    width: 135px;
+                    background-color: #242526;
+                    box-shadow: 0px 1px 5px #151515a1;
+                    margin-top: 50px;
+                    position: absolute;
+                    margin-top: 180px;
+                    padding-top:40px;
+                    border-radius: 0px 0px 10px 10px;
+                }
+
+                    div.main-container .feed .stories-reels .stories-container .story-card .create-story-bot-div .add-button {
+                        background-color: #2e89ff;
+                        width: 40px;
+                        height: 40px;
+                        margin: auto;
+                        border: 5px solid #242526;
+                        border-radius: 25px;
+                        margin-top: -60px;
+                    }
+
+                    div.main-container .feed .stories-reels .stories-container .story-card .create-story-bot-div .add-button svg {
+                        padding: 10px 5px 10px 5px;
+                        margin-top: 2px;
+                        color: white;
+                        width: 30px;
+                    }
+
+                    div.main-container .feed .stories-reels .stories-container .story-card .create-story-bot-div a {
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        padding-left: 29px;
+                        font-size: 14px;
+                    }
+
+                div.main-container .feed .stories-reels .stories-container .story-card {
+                    background-color: red;
+                    flex-shrink: 0;
+                    height: 255px;
+                    width: 135px;
+                    margin-right: 9px;
+                    display: inline-flex;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    flex-wrap: nowrap;
+                }
+
+                    div.main-container .feed .stories-reels .stories-container .story-card #non-create {
+                        position: absolute;
+                        text-decoration: none;
+                        color: white;
+                        font-size:14px;
+                        padding-left: 15px;
+                        margin-top:220px;
+                    }
+
+                    div.main-container .feed .stories-reels .stories-container .story-card #story-profile-icon {
+                        height: 40px;
+                        width: 40px;
+                        margin-top: 10px;
+                        border: 5px solid #2e89ff;
+                        margin-left: 10px;
+                        position: absolute;
+                        border-radius: 25px;
+                    }
+        
+        div.main-container .feed .create-post {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 0;
+            margin-top: 20px;
+            border-radius: 8px;
+            height: 140px;
+            background-color: #242526;
+        }
+            
+            div.main-container .feed .create-post .create-post-profile-form-container {
+                display: flex;
+                margin: auto;
+                margin-bottom: 0;
+                margin-top: 8px;
+                padding:10px;
+                padding-left: 0;
+                padding-right: 0;
+                width: 93%;
+                border-bottom: 1px solid rgba(112, 108, 108, 0.418);
+                padding-bottom: 15px;
+            }
+
+                div.main-container .feed .create-post .create-post-profile-form-container img{
+                    border-radius: 25px;
+                }
+
+                div.main-container .feed .create-post .create-post-profile-form-container input {
+                    border: 0;
+                    font-size:16px;
+                    padding-left: 15px;
+                    padding-bottom: 5px;
+                    width: 90%;
+                    margin-left: 12px;
+                    border-radius: 20px;
+                    background-color: #3a3b3c;
+                    color: white;
+                }
+
+                div.main-container .feed .create-post .create-post-profile-form-container input:focus {
+                    outline: none;
+                }
+            
+            div.main-container .feed .create-post .buttons-container {
+                display: flex;
+                margin: auto;
+                width: 90%;
+            }
+
+                div.main-container .feed .create-post .buttons-container .create-post-button {
+                    border-radius: 10px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    height: 50px;
+                    width: 40%;
+                }
+
+                    div.main-container .feed .create-post .buttons-container .create-post-button:hover {
+                        cursor: pointer;
+                        background-color: #303031 ;
+                    }
+
+                div.main-container .feed .create-post .buttons-container div {
+                    display: flex;
+                    margin: auto;
+                }
+
+                    div.main-container .feed .create-post .buttons-container div a {
+                        text-decoration: none;
+                        color: white;
+                        margin-left: 10px;
+                    }
+
+        div.main-container .feed .posts {
+            width: 60%;
+            display: flex;
+            background-color: red;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 500px;
+            flex-direction: column;
+        }
+
+            div.main-container .feed .posts .post-info {
+                background-color: #242526;
+                display: flex;
+                height: 60px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                width: 100%;
+            }
+                
+                div.main-container .feed .posts .post-info div {
+                    width: 96.5%;
+                    padding:5px;
+                    display: flex;
+                    margin: auto;
+                }
+                
+                div.main-container .feed .posts .post-info div div {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                div.main-container .feed .posts .post-info img {
+                    border-radius: 20px;
+                    display: flex;
+                }
+
+                div.main-container .feed .posts .post-info a {
+                    margin-bottom: 5px;
+                    text-decoration: none;
+                    color: white;
+                    margin-top: 3px;
+                    margin-left: 10px;
+                }
+
+            div.main-container .feed .posts .post-image {
+                background-color: yellow;
+            }
+
+                div.main-container .feed .posts .post-image img {
+                    width: 745px;
+                }
+    /* ---->> sidebar-right <<----- */
+
+    div.main-container .sidebar-right {
+        box-sizing: border-box;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 18%;
+    }
+
+        div.main-container .sidebar-right .contacts {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        div.main-container .sidebar-right .contacts h2 {
+            margin-top: 15px;
+            font-size: 20px;
+            color: white;
+        }
+
+            div.main-container .sidebar-right .contacts .contact {
+                display: flex;
+                padding: 10px;
+                width: 150%;
+                border-radius: 8px;
+            }
+
+                div.main-container .sidebar-right .contacts .contact:hover {
+                    background-color: #303031;
+                    cursor: pointer;
+                }
+
+            div.main-container .sidebar-right .contacts .contact img {
+                border-radius: 20px;
+            }
+
+            div.main-container .sidebar-right .contacts .contact a {
+                margin-top: 8px;
+                margin-left: 10px;
+                text-decoration: none;
+                color: white;
+            }
+
